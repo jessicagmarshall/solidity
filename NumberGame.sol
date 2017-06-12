@@ -13,7 +13,7 @@ contract NumberGame{
 
     function storeNumber(uint myNum){
         if(Numbers[msg.sender] != 0) throw;  //if you already stored, throw
-        Numbers[msg.sender] == myNum;    //store your number
+        Numbers[msg.sender] = myNum;    //store your number
     }
 
     function addNumber(address friendAddress) returns (uint newNumber){
